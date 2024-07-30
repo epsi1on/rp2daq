@@ -37,8 +37,25 @@ The `pico_setup.sh` script will help you to download and compile the *Standard D
     ./pico_setup.sh           # takes some 3 minutes
 ```
 
+python3 is also needed (if not exists)
+
+```bash
+sudo apt-get install python3
+```
+
+pico-sdk also needed to be on local machine:
+
+```bash
+cd ~
+git clone https://github.com/raspberrypi/pico-sdk.git
+```
 
 #### Fresh compilation (once)
+export environment variable for pico-sdk path
+
+```bash
+export PICO_SDK_PATH=~/pico-sdk
+```
 
 Now go to the folder where you downloaded rp2daq, e.g.:
 
