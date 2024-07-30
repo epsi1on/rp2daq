@@ -63,6 +63,8 @@ if you get errors while cloning submodules, do this and retry (https://stackover
 git config --global http.version HTTP/1.1
 
 ```
+
+
 #### Fresh compilation (once)
 export environment variable for pico-sdk path
 
@@ -85,6 +87,8 @@ Fresh compilation (or re-compilation if Cmake options changed):
     make
     popd
 ```
+
+note: some people had some error which said `error: 'stdio_usb' undeclared`, after cloning submodules it is fixed now.
 
 A new ```build/rp2daq.uf2``` file should appear. It can be uploaded by drag&drop as described in [README.md], or a following trick can be used that saves a bit of clicking.
 
