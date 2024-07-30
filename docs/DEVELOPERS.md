@@ -23,18 +23,18 @@ Note that this procedure, with obvious minor changes, can be perused for uploadi
 Linux is the primary development OS for rp2daq; development of firmware on other OS is not covered here yet.
 
 
-#### Setup development dependencies (once)
+#### Setup development dependencies (once) on a fresh machine
 
 Please note once again that compilation is *not* necessary to use rp2daq from Python. 
 Only if you made some changes in the rp2daq firmware's, follow these steps. 
 
-The `pico_setup.sh` script will help you to download and compile the *Standard Development Kit* (SDK) with dependencies, requiring only your password and few minutes:
+The `pico_setup.sh` script will help you to download and compile the *Standard Development Kit* (SDK) with dependencies:
 
 ```bash
-    cd
     wget -O pico_setup.sh https://rptl.io/pico-setup-script
     export SKIP_VSCODE=1
-    bash ./pico_setup.sh           # takes some 3 minutes
+    chmod +x pico_setup.sh
+    ./pico_setup.sh           # takes some 3 minutes
 ```
 
 
