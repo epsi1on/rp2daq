@@ -50,6 +50,12 @@ cd ~
 git clone https://github.com/raspberrypi/pico-sdk.git
 ```
 
+also it's submodules:
+
+```bash
+cd ~/pico-sdk
+git submodule update --init
+```
 #### Fresh compilation (once)
 export environment variable for pico-sdk path
 
