@@ -56,6 +56,13 @@ also it's submodules:
 cd ~/pico-sdk
 git submodule update --init
 ```
+
+if you get errors while cloning submodules, do this and retry (https://stackoverflow.com/a/59474908)
+
+```bash
+git config --global http.version HTTP/1.1
+
+```
 #### Fresh compilation (once)
 export environment variable for pico-sdk path
 
